@@ -9,7 +9,10 @@ import re
 import sys
 
 def search(searchString, path='/'):
-    
+    # Check if directory is passed as CLI argument
+    if len(sys.argv)>1:
+        path = sys.argv[1]
+
     # Set text file location
     location = os.path.join(os.getcwd(), path)
 
