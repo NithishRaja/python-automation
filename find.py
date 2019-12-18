@@ -6,8 +6,9 @@
 # Dependencies
 import os
 import re
+import sys
 
-def locate(path="data"):
+def locate(path="/"):
     # Set location
     location = os.path.join(os.getcwd(), path)
     # Set regex
@@ -21,4 +22,6 @@ def locate(path="data"):
                 # Print file name
                 print(directory+" : ", file)
 
-locate()
+path=sys.argv[1] if len(sys.argv)>1 else "/";
+
+locate(path)
