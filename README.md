@@ -26,8 +26,9 @@
 
 ## BNHA
 
-* Script downloads pages from all chapters till current chapter
+* Script downloads pages from all BNHA chapters till current chapter
 * Chapters can be limited by passing chapter limit as CLI argument
+* At the time of commit, 254 chapters are released
 
 ## Further updates
 
