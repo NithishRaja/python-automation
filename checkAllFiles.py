@@ -34,5 +34,7 @@ def search(searchString, path='data'):
             # Printing result
             print(os.path.join(folder, file)+" : ", matches)
 
+# Prompt for imput
+print("Enter keyword to search for")
 # Call search function
 search(input())
