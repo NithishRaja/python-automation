@@ -9,6 +9,11 @@ import bs4
 import sys
 import os
 
+# Check if CLI argument is provided
+if not len(sys.argv)>1:
+    print("Search string must be provided as CLI argument")
+    sys.exit()
+
 # Set image location
 location = os.path.join(os.getcwd(), sys.argv[1])
 
