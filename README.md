@@ -33,3 +33,4 @@
 ## Further updates
 
 * Perform multiple searches in single run
+* Get manga chapters using multiple threads
