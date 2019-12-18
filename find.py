@@ -11,8 +11,11 @@ import sys
 def locate(path="/"):
     # Set location
     location = os.path.join(os.getcwd(), path)
+    # Get file extension from user
+    print("Enter file extension")
+    ext = input()
     # Set regex
-    regex = re.compile(r'([a-zA-Z0-9\s_\\.\-\(\):])+(.py|.txt|.sh|.bash)$')
+    regex = re.compile(r'([a-zA-Z0-9\s_\\.\-\(\):])+(.'+str(ext)+')$')
     # Walk over current location
     for directory, subDirectory, files in os.walk(location):
         # Iterate over files
