@@ -10,6 +10,11 @@ import sys
 import re
 import webbrowser
 
+# Check if CLI arguement is passed
+if not len(sys.argv)>1:
+    print("Search string must be passed as CLI arguement")
+    sys.exit()
+
 # Get search string from CLI
 searchString = sys.argv[1].replace(' ', '+')
 
