@@ -6,9 +6,10 @@
 # Dependencies
 import os
 import re
+import sys
 
-def search(searchString, path='data'):
-
+def search(searchString, path='/'):
+    
     # Set text file location
     location = os.path.join(os.getcwd(), path)
 
